@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PromptForge — LLM Prompt Engineering Playground</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar-logo">
+        <span class="logo-icon">⚒</span>
+        <span class="logo-text">PromptForge</span>
+      </div>
+      <div class="sidebar-subtitle">LLM Learning Playground</div>
+
+      <div class="nav-section-label">MODULES</div>
+      <ul class="nav-list">
+        <li class="nav-item active" data-module="home">
+          <span class="nav-icon">🏠</span> Home
+        </li>
+        <li class="nav-item" data-module="zero-shot">
+          <span class="nav-icon">🎯</span> Zero-Shot Reasoning
+        </li>
+        <li class="nav-item" data-module="few-shot">
+          <span class="nav-icon">📚</span> Few-Shot Learning
+        </li>
+        <li class="nav-item" data-module="chain-of-thought">
+          <span class="nav-icon">🔗</span> Chain-of-Thought
+        </li>
+        <li class="nav-item" data-module="semantic-search">
+          <span class="nav-icon">🔍</span> Semantic Search
+        </li>
+        <li class="nav-item" data-module="adversarial">
+          <span class="nav-icon">⚔️</span> Adversarial Prompts
+        </li>
+        <li class="nav-item" data-module="role-prompting">
+          <span class="nav-icon">🎭</span> Role Prompting
+        </li>
+        <li class="nav-item" data-module="prompt-chaining">
+          <span class="nav-icon">⛓</span> Prompt Chaining
+        </li>
+        <li class="nav-item" data-module="temperature">
+          <span class="nav-icon">🌡️</span> Temperature Lab
+        </li>
+      </ul>
+
+      <div class="sidebar-footer">
+        <div class="api-status" id="apiStatus">
+          <span class="status-dot"></span> API Ready
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content" id="mainContent">
+      <div class="top-bar">
+        <button class="menu-toggle" id="menuToggle">☰</button>
+        <div class="top-bar-title" id="topBarTitle">Welcome to PromptForge</div>
+        <div class="api-key-area">
+          <input type="password" id="apiKeyInput" placeholder="Paste your API key here…" class="api-key-input" />
+          <button class="btn-save-key" id="saveApiKey">Save Key</button>
+        </div>
+      </div>
+
+      <!-- Module Views -->
+      <div id="moduleContainer" class="module-container"></div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
