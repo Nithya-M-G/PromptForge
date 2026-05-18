@@ -190,7 +190,7 @@ function setLoading(id, loading) {
 function home() {
   return `
   <div class="hero">
-    <div class="hero-tag">Mini Project · Prompt Engineering</div>
+    <div class="hero-tag">Prompt Engineering</div>
     <h1 class="hero-title">PromptForge</h1>
     <p class="hero-subtitle">
       An interactive playground to learn and experiment with Large Language Model
